@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/earlyaccess/scheherazade.css);
+/*@font-face {*/
+/*  font-family: Yekan;*/
+/*  src: url();*/
+/*}*/
+
+/* Style the button used to pause/play the video */
+button.player_buttons_active, button.player_buttons_deactive {
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.player_buttons_active {
+    background: gray;
+}
+
+button.player_buttons_deactive {
+    background: #000;
+}
+
+button.player_buttons_active:hover, button.player_buttons_deactive:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+button.info_buttons_active, button.info_buttons_deactive {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button.info_buttons_active {
+    color: gold;
+}
+
+button.info_buttons_deactive {
+    color: white;
+}
+
+button.info_buttons_active:hover, button.info_buttons_deactive:hover {
+    color: gold;
+}
+
+
+.material-icons {
+    font-size: 35px;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@keyframes jump {
+  50% { transform: translate(0px, -100px) scale3d(3,3,3); }
+  100% { transform: translate(0px, 0px) scale3d(1,1,1); }
+}
+/*
+#anki_button{
+cursor: not-allowed;
+}*/
+
+#anki_button_img {
+  width: 35px;
+  -webkit-filter: grayscale(1); /* Webkit */
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* W3C */
+}
+
+body {
+    font-family: 'Scheherazade', serif;
+    font-size: 20pt;
+    margin: 0 auto;
+    align-content: center;
+}
+
+prev_subtitle_en {
+    font-size: 25pt;
+    direction: ltr;
+    text-align: justify;
+}
+#subtitle_en{
+    font-size: 30pt;
+    direction: ltr;
+    text-align: justify;
+}
+#subtitle_fa[lang="fa"] {
+    font-size: 30pt;
+    direction: rtl;
+    text-align: justify;
+}
+#status_text{
+    font-size:20px;
+    vertical-align: middle;
+}
+
+video {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
